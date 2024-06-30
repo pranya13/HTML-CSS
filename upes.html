@@ -1,0 +1,63 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <meta charset="utf-8">
+<head>
+  <dl>this is upes student survey form</dl>
+<title>Survey-form</title>
+<link rel="stylesheet" href="upes.css" />
+<h1 id="title"><center>UPES Student Survey</center></h1>
+<p id="description"><em>Here's a short survey form for the  students of UPES</em></p>
+</head>
+<body>
+<form id="survey-form">
+  <fieldset><center>
+  <label for="name" id="name-label">Enter Your Name: <br>
+  <input type="text"  placeholder="Name" name="name" id="name" required></input></label>
+<br>
+  <label for="sapid">Enter Your SAP ID: <br><input id="sapid" type="number" pattern="[0-9]{8,}" placeholder="SAP ID" required></input></label>
+<br>
+  <label for="rno">Enter Your Enrollment Number: <br> <input type="number" id="number" required placeholder="Enrollment no." min="10" max="15"></input></label>
+  <br>
+  <label for="email" id="email-label">Enter your college Email ID: <br><input type="email" name="email" id="email" placeholder="Email" required ></input></label>
+  <br>
+  <label for="phone-number" id="number-label"> Enter Your Phone Number: <br> 
+<input type="number" max-length="10" id="phno" name="phone-number" placeholder="Phone Number"></input>
+
+  </label>
+  <br>
+  <label for="age">Enter Your Age: <br><input type="number" id="age" name="age" required max="25" min="17" placeholder="Age" ></input></label>
+<br>
+  <label for="school">Select Your School: <br><select id="dropdown">
+    <option value="socs">SoCs</option>
+    <option value="sod">SoD</option>
+    <option value="soae">SoAE</option>
+    <option  value="sob">SoB</option>
+    <option value="sol">SoL</option>
+    <option value="sohs">SoHS</option>
+    </select></label>
+    <br>
+    <br>
+<label for="year">Select Your Year: <br><br> 
+  <input type="radio" name="year" value="1st" checked>1st Year</input><br>
+  <input type="radio" name="year" value="2nd">2nd Year</input><br>
+  <input type="radio" name="year" value="3rd">3rd Year</input><br>
+  <input type="radio" name="year" value="4th">4th Year</input><br>
+</label>
+<label for="referrer">From where you get to know about Us?<br><br>
+  <input type="checkbox" value="tv-ad"> TV, newspaper Ads</input><br>
+  <input type="checkbox" value="onlinead">Online Ads</input><br>
+  <input type="checkbox" value="friends-family">Friends & Family</input><br>
+  <input type="checkbox" value="ex-upsite">UPES student/Alumini</input><br>
+  <input type="checkbox" value="faculty">UPES Faculty</input><br>
+  <input type="checkbox" value="cc">Carrer counselling</input>
+</label><br>
+<br>
+<label for="review">Tell Us about your Experience in UPES so far: <br><br><textarea id="review" name="review" rows="5" cols="50" placeholder="So far UPES have been..."></textarea><br>
+ 
+</label>
+  </center></fieldset>
+<center>
+<button id="submit" type="submit">Submit</button></center>
+</form>
+</body>
+</html>
